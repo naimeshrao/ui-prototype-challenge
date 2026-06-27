@@ -1,0 +1,73 @@
+/* === Header === */
+.header {
+  height: 100px;
+  padding: 20px 0;
+}
+.logo-main {
+  position: relative;
+  display: block;
+  width: 200px;
+}
+.logo-main img {
+  max-height: 155px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: -50px;
+}
+
+.hero-section {
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-dark) 0%,
+    var(--color-primary-purple) 100%
+  );
+}
+
+.hero-glow {
+  background: var(--color-purple);
+
+  background: radial-gradient(
+    circle,
+    var(--color-purple) 0%,
+    var(--color-dark-transparent) 100%
+  );
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    var(--color-gold-light) 0%,
+    var(--color-gold-soft) 100%
+  );
+}
+
+/* ================ Media Queries ================ */
+
+/* Large Desktops */
+@media (min-width: 1400px) {
+}
+
+/* Desktop */
+@media (max-width: 1399px) {
+}
+
+/* Laptop */
+@media (max-width: 1199px) {
+}
+
+/* Tablet Landscape */
+@media (max-width: 991px) {
+}
+
+/* Tablet Portrait */
+@media (max-width: 767px) {
+}
+
+/* Mobile Large */
+@media (max-width: 575px) {
+}
+
+/* Mobile Small */
+@media (max-width: 399px) {
+}
