@@ -1,0 +1,58 @@
+:root {
+  /* Base */
+  --black: #000000;
+  --white: #ffffff;
+
+  /* Brand Colors */
+  --color-primary-dark: #000e38;
+  --color-primary-purple: #3f186a;
+  --color-primary-blue-dark: #030e3b;
+  --color-primary-navy: #061532;
+
+  /* Purple Palette */
+  --color-purple: #592692;
+  --color-purple-light: #ead7ff;
+  --color-purple-soft: #dec1ff;
+  --color-purple-muted: #ddbfff;
+  --color-purple-pale: #edddff;
+  --color-purple-gray: #755797;
+
+  /* Dark Shades */
+  --color-dark-blue: #070f3d;
+  --color-dark-navy: #010e39;
+
+  /* Gold Palette */
+  --color-gold-light: #ffcc81;
+  --color-gold-soft: #e9c79f;
+
+  /* More Colors */
+  --color-blue-accent: #0344a2;
+  --color-transparent: rgba(0, 0, 0, 0);
+  --color-border: #e8e7e7;
+  --color-gray-400: #464646;
+
+  /* Grid */
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  --container-xxl: 1320px;
+  --gutter-x: 24px;
+  --gutter-y: 0;
+
+  /* Button */
+  --btn-primary: var(--color-primary-blue-dark);
+  --btn-primary-dark: #2a1459;
+
+  --btn-radius: 4px;
+  --btn-padding-y: 16px;
+  --btn-padding-x: 20px;
+  --btn-font-size: 14px;
+  --btn-font-weight: 700;
+  --btn-transition: 0.2s ease;
+
+  /* Accessibility */
+  --focus-ring-color: var(--color-blue-accent);
+  --focus-ring-size: 2px;
+  --focus-ring-offset: 2px;
+}
