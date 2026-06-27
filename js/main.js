@@ -1,20 +1,23 @@
 // Animation Intersection Observer
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.15,
-  },
-);
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (!entry.isIntersecting) return;
 
-document.querySelectorAll(".animate").forEach((element) => {
-  observer.observe(element);
+        setTimeout(() => {
+          entry.target.classList.add("show");
+        }, index * 150);
+
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.15,
+    },
+  );
+
+  document.querySelectorAll(".animate").forEach((el) => observer.observe(el));
 });
 
-// Slider
+// School Logo Slider

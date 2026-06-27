@@ -55,6 +55,9 @@
     <link rel="stylesheet" href="./css/helper.css" />
     <link rel="stylesheet" href="./css/components.css" />
     <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Scripts -->
+    <script defer src="./js/main.js"></script>
   </head>
 
   <body>
@@ -67,6 +70,7 @@
               <span class="logo-main">
                 <a href="#">
                   <img
+                    class="animate fade-down"
                     src="./assets/images/logo-main.png"
                     alt="Premier Schools Exhibition Logo"
                     loading="lazy"
@@ -76,7 +80,7 @@
             </div>
           </div>
           <div class="col-5 col-lg-6">
-            <div class="flex jc-end">
+            <div class="flex jc-end animate fade-down">
               <a class="btn btn-primary" href="https://www.google.com/">
                 Register Now
               </a>
@@ -88,61 +92,157 @@
 
     <!-- ========== Hero ========== -->
     <div class="hero-section">
-      <div class="container">
-        <div class="row">
+      <div class="container h-100">
+        <div class="row ai-center h-100">
           <div class="col-12 col-md-6 col-lg-4">
-            <div>
+            <div class="hero-content pos-rel flex gap-6 fd-col animate fade-up">
               <h2>
-                Discover Gurugram's
-                <span>Top 30+ Schools</span>
-                <span>All In One Place</span>
+                <span class="grad-text grad-gold txt-1">
+                  Discover Gurugram's
+                </span>
+                <span class="grad-text grad-gold txt-2">Top 30+ Schools</span>
+                <span class="grad-text grad-gold txt-3">All In One Place</span>
               </h2>
-              <div>
+
+              <div class="event-box grad-gold flex gap-5 jc-center">
                 <h5>
-                  <strong>Apparel House,</strong>
+                  <strong class="grad-text grad-blue">Apparel House,</strong>
                   Sec 44, Gurugram
                 </h5>
                 <h5>
-                  <strong>2-3 August 2025</strong>
+                  <strong class="grad-text grad-blue">2-3 August 2025</strong>
                   Sat-Sun | 10AM - 6PM
                 </h5>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-5">
-            <div>
-              <div>Slider 1</div>
-              <div>Slider 2</div>
-              <div>Slider 3</div>
+          <div class="col-12 col-md-6 col-lg-5 h-100">
+            <div class="slider-wrap pos-rel">
+              <div class="v-slider-wrap">
+                <div>
+                  <div class="vs-item">
+                    <img
+                      src="./assets/images/slider/hero-slide-1-1.png"
+                      alt="Image Name"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="vs-item">
+                    <img
+                      src="./assets/images/slider/hero-slide-1-2.png"
+                      alt="Image Name"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="vs-item">
+                    <img
+                      src="./assets/images/slider/hero-slide-1-3.png"
+                      alt="Image Name"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="vs-item">
+                    <img
+                      src="./assets/images/slider/hero-slide-1-4.png"
+                      alt="Image Name"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="v-slider-wrap">
+                <div class="vs-item">
+                  <img
+                    src="./assets/images/slider/hero-slide-2-1.png"
+                    alt="Image Name"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="vs-item">
+                  <img
+                    src="./assets/images/slider/hero-slide-2-2.png"
+                    alt="Image Name"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="vs-item">
+                  <img
+                    src="./assets/images/slider/hero-slide-2-3.png"
+                    alt="Image Name"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="vs-item">
+                  <img
+                    src="./assets/images/slider/hero-slide-2-4.png"
+                    alt="Image Name"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="v-slider-wrap">
+                <div class="vs-item">
+                  <img
+                    src="./assets/images/slider/hero-slide-3-1.png"
+                    alt="Image Name"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="vs-item">
+                  <img
+                    src="./assets/images/slider/hero-slide-3-2.png"
+                    alt="Image Name"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="vs-item">
+                  <img
+                    src="./assets/images/slider/hero-slide-3-3.png"
+                    alt="Image Name"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="vs-item">
+                  <img
+                    src="./assets/images/slider/hero-slide-3-4.png"
+                    alt="Image Name"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="form">
+            <div class="form pos-rel animate fade-up">
               <h3>Enquire Now</h3>
               <form>
-                <div class="form-item">
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Parent's Name"
-                  />
+                <div class="form-group flex fd-col gap-3">
+                  <div class="form-item">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Parent's Name"
+                    />
+                  </div>
+                  <div class="form-item">
+                    <input
+                      class="form-control"
+                      type="number"
+                      placeholder="Phone number"
+                    />
+                  </div>
+                  <div class="form-item">
+                    <textarea
+                      class="form-control"
+                      placeholder="Which grade are you looking for?"
+                    ></textarea>
+                  </div>
                 </div>
-                <div class="form-item">
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Phone number"
-                  />
-                </div>
-                <div class="form-item">
-                  <textarea
-                    class="form-control"
-                    placeholder="Which grade are you looking for?"
-                  ></textarea>
-                </div>
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn btn-primary-dark" type="submit">
+                  Submit
+                </button>
               </form>
             </div>
           </div>
@@ -155,8 +255,8 @@
       <div class="container-lg">
         <div class="row">
           <div class="col-6 col-md-3">
-            <div class="accred-item">
-              <div class="accred-title">
+            <div class="accred-item animate fade-up">
+              <div class="accred-title grad-text">
                 Trusted by
                 <strong>1 Million+</strong>
                 Parents
@@ -164,8 +264,8 @@
             </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="accred-item">
-              <div class="accred-title">
+            <div class="accred-item animate fade-up">
+              <div class="accred-title grad-text">
                 <strong
                   >22+ <br />
                   Years
@@ -175,8 +275,8 @@
             </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="accred-item">
-              <div class="accred-title">
+            <div class="accred-item animate fade-up">
+              <div class="accred-title grad-text">
                 <strong> 500+</strong>
                 Participating <br />
                 Schools
@@ -184,8 +284,8 @@
             </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="accred-item">
-              <div class="accred-title">
+            <div class="accred-item animate fade-up">
+              <div class="accred-title grad-text">
                 <strong>17 Cities </strong>
                 Across the <br />
                 Globe
@@ -198,74 +298,144 @@
 
     <!-- ========== Participating Schools ========== -->
     <div class="schools-logo">
-      <div class="container-fluid">
-        <h3>Participating Schools</h3>
+      <div class="container-fluid flex fd-col gap-7">
+        <h3 class="title grad-text grad-blue animate fade-up">
+          Participating Schools
+        </h3>
 
         <div class="row">
           <div class="col-12">
-            <div class="schools-list">
-              <div class="schools-item">
-                <img
-                  src="./assets/images/logos/school-1.png"
-                  alt="School 1"
-                  loading="lazy"
-                />
+            <div class="flex fd-col gap-7">
+              <div class="schools-list slide-left-right">
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-1.png"
+                    alt="School 1"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-2.png"
+                    alt="School 2"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-3.png"
+                    alt="School 3"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-4.png"
+                    alt="School 4"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-5.png"
+                    alt="School 5"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-6.png"
+                    alt="School 6"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-7.png"
+                    alt="School 7"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-8.png"
+                    alt="School 8"
+                    loading="lazy"
+                  />
+                </div>
               </div>
 
-              <div class="schools-item">
-                <img
-                  src="./assets/images/logos/school-2.png"
-                  alt="School 2"
-                  loading="lazy"
-                />
-              </div>
+              <div class="schools-list slide-right-left">
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-1.png"
+                    alt="School 1"
+                    loading="lazy"
+                  />
+                </div>
 
-              <div class="schools-item">
-                <img
-                  src="./assets/images/logos/school-3.png"
-                  alt="School 3"
-                  loading="lazy"
-                />
-              </div>
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-2.png"
+                    alt="School 2"
+                    loading="lazy"
+                  />
+                </div>
 
-              <div class="schools-item">
-                <img
-                  src="./assets/images/logos/school-4.png"
-                  alt="School 4"
-                  loading="lazy"
-                />
-              </div>
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-3.png"
+                    alt="School 3"
+                    loading="lazy"
+                  />
+                </div>
 
-              <div class="schools-item">
-                <img
-                  src="./assets/images/logos/school-5.png"
-                  alt="School 5"
-                  loading="lazy"
-                />
-              </div>
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-4.png"
+                    alt="School 4"
+                    loading="lazy"
+                  />
+                </div>
 
-              <div class="schools-item">
-                <img
-                  src="./assets/images/logos/school-6.png"
-                  alt="School 6"
-                  loading="lazy"
-                />
-              </div>
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-5.png"
+                    alt="School 5"
+                    loading="lazy"
+                  />
+                </div>
 
-              <div class="schools-item">
-                <img
-                  src="./assets/images/logos/school-7.png"
-                  alt="School 7"
-                  loading="lazy"
-                />
-              </div>
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-6.png"
+                    alt="School 6"
+                    loading="lazy"
+                  />
+                </div>
 
-              <div class="schools-item">
-                <img
-                  src="./assets/images/logos/school-8.png"
-                  alt="School 8"
-                  loading="lazy"
-                />
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-7.png"
+                    alt="School 7"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="schools-item">
+                  <img
+                    src="./assets/images/logos/school-8.png"
+                    alt="School 8"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -275,46 +445,85 @@
 
     <!-- ========== Schools Features ========== -->
     <div class="schools-features">
-      <div class="container">
-        <h2>Choose the School That Fits You Best</h2>
+      <div class="container flex fd-col gap-6">
+        <h2 class="title grad-text grad-blue animate fade-up">
+          Choose the School That Fits You Best
+        </h2>
+
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="schools-feat-box">
-              <h5>Pre-Schools & Early Learning Centres</h5>
-              <p>
-                Nurturing foundational skills for toddlers and pre-primary
-                children.
-              </p>
+            <div class="schools-feat-box animate fade-up">
+              <div class="school-img">
+                <img
+                  src="./assets/images/school-pic-1.png"
+                  alt="Pre-Schools & Early Learning Centres"
+                  loading="lazy"
+                />
+              </div>
+              <div class="schools-feat-inner">
+                <h5>Pre-Schools & Early Learning Centres</h5>
+                <p>
+                  Nurturing foundational skills for toddlers and pre-primary
+                  children.
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="schools-feat-box">
-              <h5>K-12 CBSE Day Schools</h5>
-              <p>
-                Reputed schools offering complete schooling from Kindergarten to
-                Grade 12.
-              </p>
+            <div class="schools-feat-box animate fade-up">
+              <div class="school-img">
+                <img
+                  src="./assets/images/school-pic-2.png"
+                  alt="K-12 CBSE Day Schools"
+                  loading="lazy"
+                />
+              </div>
+              <div class="schools-feat-inner">
+                <h5>K-12 CBSE Day Schools</h5>
+                <p>
+                  Reputed schools offering complete schooling from Kindergarten
+                  to Grade 12.
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="schools-feat-box">
-              <h5>Heritage to New-Age Schools</h5>
-              <p>
-                Time-tested schools to innovative pedagogy, tech enabled,
-                future-ready schools
-              </p>
+            <div class="schools-feat-box animate fade-up">
+              <div class="school-img">
+                <img
+                  src="./assets/images/school-pic-3.png"
+                  alt="Heritage to New-Age Schools"
+                  loading="lazy"
+                />
+              </div>
+              <div class="schools-feat-inner">
+                <h5>Heritage to New-Age Schools</h5>
+                <p>
+                  Time-tested schools to innovative pedagogy, tech enabled,
+                  future-ready schools
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="schools-feat-box">
-              <h5>International Curriculum Schools</h5>
-              <p>
-                Offering IB, Cambridge, Finnish and other global curricula with
-                a global learning environment.
-              </p>
+            <div class="schools-feat-box animate fade-up">
+              <div class="school-img">
+                <img
+                  src="./assets/images/school-pic-4.png"
+                  alt="International Curriculum Schools"
+                  loading="lazy"
+                />
+              </div>
+              <div class="schools-feat-inner">
+                <h5>International Curriculum Schools</h5>
+                <p>
+                  Offering IB, Cambridge, Finnish and other global curricula
+                  with a global learning environment.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -322,113 +531,143 @@
     </div>
 
     <!-- ========== Spotlight Section ========== -->
-    <div class="spotlight-section">
-      <div class="container">
-        <h2>Choose the School That Fits You Best</h2>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-5">
-            <div class="schools-feat-box">
-              <p class="eyebrow">Exciting Opportunities for Parents!</p>
-              <h2>Pre-schedule Your School Appointments</h2>
-              <p class="eyebrow">To Avoid Rush</p>
-
-              <a class="btn btn-primary" href="https://www.google.com/">
-                Pre-schedule Now
-              </a>
+    <section class="spotlight-section">
+      <div class="spot-grid">
+        <div class="spot-content">
+          <div class="spot-content-inner">
+            <div class="spotlight-box flex fd-col gap-7">
+              <div class="flex fd-col gap-2">
+                <p class="eyebrow grad-text grad-purple animate fade-up">
+                  Exciting Opportunities for Parents!
+                </p>
+                <h2 class="grad-text grad-blue animate fade-up">
+                  Pre-schedule Your School Appointments
+                </h2>
+                <p class="eyebrow grad-text grad-purple animate fade-up">
+                  To Avoid Rush
+                </p>
+              </div>
+              <div>
+                <a
+                  class="btn btn-primary animate fade-up"
+                  href="https://www.google.com/"
+                >
+                  Pre-schedule Now
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-5">
-            <img
-              src="./assets/images/banner-1.png"
-              alt="Choose the School That Fits You Best"
-              loading="lazy"
-            />
-          </div>
+        </div>
+
+        <div class="spotlight-img animate fade">
+          <img
+            src="./assets/images/banner-1.png"
+            alt="Choose the School That Fits You Best"
+            loading="lazy"
+          />
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ========== Exhibition Features ========== -->
     <div class="exhibition-fet">
-      <div class="container">
-        <h2>What Makes This Exhibition a Must-Visit</h2>
+      <div class="container-fluid flex fd-col gap-7">
+        <h2 class="title animate fade-up">
+          What Makes This Exhibition a Must-Visit
+        </h2>
 
         <div class="row">
           <div class="col-12">
             <div class="exh-list">
               <div class="exh-item">
-                <div class="exh-img">
-                  <img
-                    src="./assets/images/icons/icon-exh-fe1.svg"
-                    alt="Interact Directly with School Heads"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="exh-title">Interact Directly with School Heads</div>
-                <div class="exh-content">
-                  Get answers straight from the experts
-                </div>
-              </div>
-
-              <div class="exh-item">
-                <div class="exh-img">
-                  <img
-                    src="./assets/images/icons/icon-exh-fe2.svg"
-                    alt="Compare Curriculum & Pedagogy"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="exh-title">Compare Curriculum & Pedagogy</div>
-                <div class="exh-content">
-                  Understand the differences between CBSE, ICSE, IB, Cambridge,
-                  Finnish & more
+                <div class="exh-item-inner">
+                  <div class="exh-img">
+                    <img
+                      src="./assets/images/icons/icon-exh-fe1.svg"
+                      alt="Interact Directly with School Heads"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="exh-title grad-text grad-blue">
+                    Interact Directly with School Heads
+                  </div>
+                  <div class="exh-content grad-text grad-blue">
+                    Get answers straight from the experts
+                  </div>
                 </div>
               </div>
 
               <div class="exh-item">
-                <div class="exh-img">
-                  <img
-                    src="./assets/images/icons/icon-exh-fe3.svg"
-                    alt="Get Exclusive Fee Structures & Offers"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="exh-title">
-                  Get Exclusive Fee Structures & Offers
-                </div>
-                <div class="exh-content">
-                  Access transparent information and avail offers
-                </div>
-              </div>
-
-              <div class="exh-item">
-                <div class="exh-img">
-                  <img
-                    src="./assets/images/icons/icon-exh-fe4.svg"
-                    alt="Explore Schools Offerings"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="exh-title">Explore Schools Offerings</div>
-                <div class="exh-content">
-                  Preview infrastructure, co-curricular, teaching methodology
-                  and culture
+                <div class="exh-item-inner">
+                  <div class="exh-img">
+                    <img
+                      src="./assets/images/icons/icon-exh-fe2.svg"
+                      alt="Compare Curriculum & Pedagogy"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="exh-title grad-text grad-blue">
+                    Compare Curriculum & Pedagogy
+                  </div>
+                  <div class="exh-content grad-text grad-blue">
+                    Understand the differences between CBSE, ICSE, IB,
+                    Cambridge, Finnish & more
+                  </div>
                 </div>
               </div>
 
               <div class="exh-item">
-                <div class="exh-img">
-                  <img
-                    src="./assets/images/icons/icon-exh-fe5.svg"
-                    alt="On-the-Spot Admissions & Counselling"
-                    loading="lazy"
-                  />
+                <div class="exh-item-inner">
+                  <div class="exh-img">
+                    <img
+                      src="./assets/images/icons/icon-exh-fe3.svg"
+                      alt="Get Exclusive Fee Structures & Offers"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="exh-title grad-text grad-blue">
+                    Get Exclusive Fee Structures & Offers
+                  </div>
+                  <div class="exh-content grad-text grad-blue">
+                    Access transparent information and avail offers
+                  </div>
                 </div>
-                <div class="exh-title">
-                  On-the-Spot Admissions & Counselling
+              </div>
+
+              <div class="exh-item">
+                <div class="exh-item-inner">
+                  <div class="exh-img">
+                    <img
+                      src="./assets/images/icons/icon-exh-fe4.svg"
+                      alt="Explore Schools Offerings"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="exh-title grad-text grad-blue">
+                    Explore Schools Offerings
+                  </div>
+                  <div class="exh-content grad-text grad-blue">
+                    Preview infrastructure, co-curricular, teaching methodology
+                    and culture
+                  </div>
                 </div>
-                <div class="exh-content">
-                  Save time with instant applications and expert guidance
+              </div>
+
+              <div class="exh-item">
+                <div class="exh-item-inner">
+                  <div class="exh-img">
+                    <img
+                      src="./assets/images/icons/icon-exh-fe5.svg"
+                      alt="On-the-Spot Admissions & Counselling"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="exh-title grad-text grad-blue">
+                    On-the-Spot Admissions & Counselling
+                  </div>
+                  <div class="exh-content grad-text grad-blue">
+                    Save time with instant applications and expert guidance
+                  </div>
                 </div>
               </div>
             </div>
@@ -446,20 +685,24 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-2">
-            <img
-              src="./assets/images/logo-main.png"
-              alt="Premier Schools Exhibition Logo"
-              loading="lazy"
-            />
+            <div class="logo animate fade-up">
+              <img
+                src="./assets/images/logo-main.png"
+                alt="Premier Schools Exhibition Logo"
+                loading="lazy"
+              />
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="foot-content">
+            <div class="foot-content animate fade-up">
               <div class="foot-icon icon-map">
-                <img
-                  src="./assets/images/icons/icon-map.svg"
-                  alt="map"
-                  loading="lazy"
-                />
+                <span>
+                  <img
+                    src="./assets/images/icons/icon-map.svg"
+                    alt="map"
+                    loading="lazy"
+                  />
+                </span>
               </div>
               <div class="foot-text">
                 <p><strong>Corporate Office:</strong></p>
@@ -471,13 +714,15 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="foot-content">
+            <div class="foot-content animate fade-up">
               <div class="foot-icon icon-map">
-                <img
-                  src="./assets/images/icons/icon-map.svg"
-                  alt="map"
-                  loading="lazy"
-                />
+                <span>
+                  <img
+                    src="./assets/images/icons/icon-map.svg"
+                    alt="map"
+                    loading="lazy"
+                  />
+                </span>
               </div>
               <div class="foot-text">
                 <p><strong>Ahmedabad Office:</strong></p>
@@ -489,54 +734,69 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-2">
-            <div class="foot-content">
+            <div class="foot-content animate fade-up">
               <div class="foot-icon icon-phone">
-                <img
-                  src="./assets/images/icons/icon-call.svg"
-                  alt="phone"
-                  loading="lazy"
-                />
+                <span>
+                  <img
+                    src="./assets/images/icons/icon-call.svg"
+                    alt="phone"
+                    loading="lazy"
+                  />
+                </span>
               </div>
               <div class="foot-text">
                 <p><strong>Call us on</strong></p>
                 <p>
-                  <a>9674805912</a>
+                  <a href="tel:9674805912">9674805912</a>
                 </p>
                 <p>
-                  <a>9674585012</a>
+                  <a href="tel:9674585012">9674585012</a>
                 </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-2">
-            <div class="foot-content">
+            <div class="foot-content fd-col animate fade-up">
+              <p><strong>Follow us on</strong></p>
               <div class="foot-text">
-                <ul>
+                <ul class="flex gap-4">
                   <li>
                     <a href="https://www.instagram.com/" target="_blank">
-                      <img
-                        src="./assets/images/icons/icon-social-insta.svg"
-                        alt="Instagram"
-                        loading="lazy"
-                      />
+                      <div class="foot-icon">
+                        <span>
+                          <img
+                            src="./assets/images/icons/icon-social-insta.svg"
+                            alt="Instagram"
+                            loading="lazy"
+                          />
+                        </span>
+                      </div>
                     </a>
                   </li>
                   <li>
                     <a href="https://www.facebook.com/" target="_blank">
-                      <img
-                        src="./assets/images/icons/icon-social-fb.svg"
-                        alt="Facebook"
-                        loading="lazy"
-                      />
+                      <div class="foot-icon">
+                        <span>
+                          <img
+                            src="./assets/images/icons/icon-social-fb.svg"
+                            alt="Facebook"
+                            loading="lazy"
+                          />
+                        </span>
+                      </div>
                     </a>
                   </li>
                   <li>
                     <a href="https://www.youtube.com/" target="_blank">
-                      <img
-                        src="./assets/images/icons/icon-social-yt.svg"
-                        alt="Youtube"
-                        loading="lazy"
-                      />
+                      <div class="foot-icon">
+                        <span>
+                          <img
+                            src="./assets/images/icons/icon-social-yt.svg"
+                            alt="Youtube"
+                            loading="lazy"
+                          />
+                        </span>
+                      </div>
                     </a>
                   </li>
                 </ul>
@@ -552,7 +812,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <p>
+            <p class="grad-text grad-blue animate fade">
               Copyright <span>©</span> 2025 | All rights reserved. Premier
               Schools Exhibition
             </p>
