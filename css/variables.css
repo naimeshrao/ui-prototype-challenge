@@ -2,12 +2,15 @@
   /* Base */
   --black: #000000;
   --white: #ffffff;
+  --black-20: rgba(0, 0, 0, 0.2);
+  --white-10: rgba(255, 255, 255, 0.1);
 
   /* Brand Colors */
   --color-primary-dark: #000e38;
   --color-primary-purple: #3f186a;
   --color-primary-blue-dark: #030e3b;
   --color-primary-navy: #061532;
+  --color-primary-navy-20: rgba(6, 21, 50, 0.2);
 
   /* Purple Palette */
   --color-purple: #592692;
@@ -16,6 +19,7 @@
   --color-purple-muted: #ddbfff;
   --color-purple-pale: #edddff;
   --color-purple-gray: #755797;
+  --color-purple-bright: #9b4df0;
 
   /* Dark Shades */
   --color-dark-blue: #070f3d;
@@ -32,13 +36,13 @@
   --color-gray-400: #464646;
 
   /* Grid */
-  --container-sm: 540px;
-  --container-md: 720px;
-  --container-lg: 960px;
-  --container-xl: 1140px;
-  --container-xxl: 1320px;
-  --gutter-x: 24px;
-  --gutter-y: 0;
+  --container-sm: 640px;
+  --container-md: 840px;
+  --container-lg: 1140px;
+  --container-xl: 1440px;
+  --container-xxl: 1600px;
+  --gutter-x: 16px;
+  --gutter-y: 16px;
 
   /* Button */
   --btn-primary: var(--color-primary-blue-dark);
@@ -55,4 +59,30 @@
   --focus-ring-color: var(--color-blue-accent);
   --focus-ring-size: 2px;
   --focus-ring-offset: 2px;
+
+  /* Gradient */
+  --grad-blue: linear-gradient(
+    0deg,
+    var(--color-primary-dark) 0%,
+    var(--color-primary-purple) 100%
+  );
+  --grad-blue-45: linear-gradient(
+    315deg,
+    var(--color-purple-gray) 0%,
+    var(--color-dark-blue) 100%
+  );
+  --grad-light-purple: linear-gradient(
+    45deg,
+    var(--color-purple-muted) 0%,
+    var(--color-purple-soft) 100%
+  );
 }
+
+/* Fonts
+* font-family: "Archivo", sans-serif;
+* font-family: "Open Sans", sans-serif;
+*/
+
+/* Animation
+* fade, fade-up, fade-left, fade-right use class along with animate
+*/

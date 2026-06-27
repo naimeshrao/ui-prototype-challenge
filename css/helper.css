@@ -1,5 +1,4 @@
 /* ================ Modern CSS Reset ================ */
-
 *,
 *::before,
 *::after {
@@ -74,6 +73,18 @@ h6 {
   font-weight: inherit;
 }
 
+/* === Form Controls === */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 /* === Global Focus Visible === */
 :focus-visible {
   outline: none;
@@ -87,6 +98,74 @@ h6 {
 :focus:not(:focus-visible) {
   outline: none;
   box-shadow: none;
+}
+
+/* === Global Classes === */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.title {
+  text-align: center;
+}
+
+.grad-text {
+  display: block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.grad-blue {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-primary-purple) 0%,
+    var(--color-primary-dark) 100%
+  );
+}
+
+.grad-gold {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-gold-light) 0%,
+    var(--color-gold-soft) 100%
+  );
+}
+
+.grad-purple {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-purple-bright) 0%,
+    var(--color-purple-gray) 100%
+  );
+}
+
+/* ================ Utility Classes ================ */
+.h-100 {
+  height: 100%;
+}
+
+.pos-rel {
+  position: relative;
+  z-index: 1;
 }
 
 /* ================ Grid CSS ================ */
@@ -159,17 +238,14 @@ h6 {
 .row {
   display: flex;
   flex-wrap: wrap;
-
   margin-inline: calc(var(--gutter-x) / -2);
-  margin-top: calc(var(--gutter-y) * -1);
+  row-gap: var(--gutter-y);
 }
 
 .row > * {
   width: 100%;
   max-width: 100%;
-
   padding-inline: calc(var(--gutter-x) / 2);
-  margin-top: var(--gutter-y);
 }
 
 /* === Auto Column === */
@@ -687,6 +763,15 @@ h6 {
 .gap-5 {
   gap: 24px;
 }
+.gap-6 {
+  gap: 32px;
+}
+.gap-7 {
+  gap: 40px;
+}
+.gap-9 {
+  gap: 50px;
+}
 
 /* ================ Animation ================ */
 .animate {
@@ -716,6 +801,10 @@ h6 {
 
 .fade-right {
   transform: translateX(40px);
+}
+
+.fade-down {
+  transform: translateY(-40px);
 }
 
 /* === Accessibility === */

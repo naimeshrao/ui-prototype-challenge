@@ -1,15 +1,7 @@
-/* Fonts
-* font-family: "Archivo", sans-serif;
-* font-family: "Open Sans", sans-serif;
-*/
-
-/* Animation
-* fade, fade-up, fade-left, fade-right use class along with animate
-*/
-
 /* ========== Global ========== */
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 /* ========== Button ========== */
@@ -33,21 +25,39 @@ body {
   transition: all var(--btn-transition);
   height: 60px;
   min-width: 150px;
+  max-width: 100%;
 }
 
-.btn:before {
+.btn:before,
+.btn:after {
   content: "";
   position: absolute;
   display: block;
-  right: 100%;
-  background-color: var(--btn-primary);
-  border-radius: var(--btn-radius) 0 0 var(--btn-radius);
   width: 60px;
   height: 60px;
-  background-image: url(./../assets/images/icons/icon-btn-link-white.svg);
+  right: 100%;
+}
+
+.btn:before {
+  background-color: var(--btn-primary);
+  border-radius: var(--btn-radius) 0 0 var(--btn-radius);
+  background-image:
+    linear-gradient(
+      280deg,
+      var(--color-primary-dark) 0%,
+      var(--color-primary-purple) 100%
+    ),
+    url("./../assets/images/icons/icon-btn-link-white.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+}
+
+.btn:after {
+  background-image: url("./../assets/images/icons/icon-btn-link-white.svg");
   background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-primary {
@@ -63,15 +73,19 @@ body {
 }
 
 .btn-primary-dark {
-  background: var(--btn-primary-dark);
-  border-color: var(--btn-primary-dark);
+  background: transparent;
+  border-color: var(--white);
   color: var(--white);
 }
 
+.btn.btn-primary-dark::after {
+  background-color: var(--white);
+  background-image: url(./../assets/images/icons/icon-btn-link-primary.svg);
+}
+
 .btn-primary-dark:hover {
-  background: var(--btn-primary-dark);
-  border-color: var(--btn-primary-dark);
-  color: var(--white);
+  background: var(--white);
+  color: var(--btn-primary-dark);
 }
 
 /* ========== Component ========== */
