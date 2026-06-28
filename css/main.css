@@ -233,6 +233,7 @@ textarea.form-control {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 270px;
 }
 
 .schools-list .schools-item img {
@@ -276,6 +277,7 @@ textarea.form-control {
   justify-content: end;
   padding: 24px;
   background: var(--black);
+  transition: all 0.3s ease-in-out;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, var(--black) 100%);
 }
 
@@ -288,13 +290,17 @@ textarea.form-control {
   font-size: 18px;
 }
 
+.schools-feat-box:hover .schools-feat-inner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, var(--black) 100%);
+}
+
 /* ================ Spotlight Section ================ */
 .spotlight-section {
   overflow: hidden;
   background: var(--color-purple-soft);
 }
 
-.spotlight-section .btn {
+.spotlight-section .btn:not(:hover) {
   background: transparent;
 }
 
@@ -387,7 +393,7 @@ textarea.form-control {
   position: absolute;
   z-index: -1;
   left: 50%;
-  bottom: -110px;
+  bottom: -160px;
   width: 140%;
   height: 650px;
   background: var(--color-primary-dark);
@@ -399,11 +405,13 @@ textarea.form-control {
   color: var(--white);
 }
 
-.exh-list {
+.exh-list .viewport {
+  overflow: visible !important;
 }
 
 .exh-item {
   position: relative;
+  height: 100%;
 }
 
 .exh-item::before {
@@ -427,6 +435,7 @@ textarea.form-control {
   padding: 30px;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .exh-item .exh-img {

@@ -1,0 +1,127 @@
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider .viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider .track {
+  display: flex;
+  will-change: transform;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+}
+
+.slider.vertical .track {
+  touch-action: pan-x;
+}
+
+.slider .slide {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+.slider button.prev,
+.slider button.next {
+  position: absolute;
+  top: calc(100% + 40px);
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--white);
+  border: 3px solid var(--white);
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+}
+
+.slider button.prev {
+  left: calc(50% - 45px);
+  background-image: url(./../assets/images/icons/icon-arrw-left.svg);
+}
+.slider button.next {
+  left: calc(50% + 45px);
+  right: auto;
+  background-image: url(./../assets/images/icons/icon-arrw-right.svg);
+}
+
+.slider button.prev:hover {
+  background-image: url(./../assets/images/icons/icon-arrw-left-primary.svg);
+}
+.slider button.next:hover {
+  background-image: url(./../assets/images/icons/icon-arrw-right-primary.svg);
+}
+
+.slider button.prev:hover,
+.slider button.next:hover {
+  background-color: var(--white);
+  color: var(--color-primary-dark);
+}
+
+.slider .prev {
+  left: 10px;
+}
+
+.slider .next {
+  right: 10px;
+}
+
+.slider.vertical button {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider.vertical .prev {
+  top: 10px;
+}
+
+.slider.vertical .next {
+  top: auto;
+  bottom: 10px;
+}
+
+.slider.dragging {
+  cursor: grabbing;
+}
+
+.slider.dragging .track {
+  transition: none !important;
+}
+
+.slider.dragging * {
+  pointer-events: none;
+}
+
+/* ============== Marquee Slider ============== */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: max-content;
+  will-change: transform;
+  gap: 32px;
+  padding: 2px 0;
+}
+
+.marquee-track > * {
+  flex: 0 0 auto;
+}
