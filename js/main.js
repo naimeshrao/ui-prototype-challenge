@@ -21,22 +21,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ======================== Slider
-// new Slider({
-//   selector: ".schools-ltr",
-//   items: 4,
-//   gap: 20,
-//   speed: 800,
-//   orientation: "horizontal",
-//   direction: "ltr",
-//   autoplay: true,
-//   autoplayType: "continuous",
-//   autoplayDelay: 800,
-//   pauseOnHover: true,
-//   mouseControl: true,
-//   arrows: false,
-//   loop: true,
-// });
+// Hero Banner Sliders
+new VMarquee({
+  selector: ".hero-vs-1",
+  speed: 0.8,
+  direction: "up",
+  pauseOnHover: true,
+});
 
+new VMarquee({
+  selector: ".hero-vs-2",
+  speed: 0.8,
+  direction: "down",
+  pauseOnHover: true,
+});
+
+new VMarquee({
+  selector: ".hero-vs-3",
+  speed: 0.8,
+  direction: "up",
+  pauseOnHover: true,
+});
+
+// School Logo Sliders
 new MarqueeSlider({
   selector: ".schools-ltr",
   speed: 0.8,
@@ -51,30 +58,17 @@ new MarqueeSlider({
   pauseOnHover: true,
 });
 
-new Slider({
+// Exhibition Features Slider
+new CSSlider({
   selector: ".exh-list",
   items: 4,
-  gap: 20,
+  media: {
+    lg: 3,
+    md: 2,
+    sm: 1,
+  },
   speed: 500,
-  orientation: "horizontal",
-  direction: "ltr",
-  autoplay: false,
-  pauseOnHover: true,
-  mouseControl: true,
-  arrows: true,
+  gap: 24,
   loop: false,
+  arrows: true,
 });
-
-// new Slider({
-//   selector: ".slider-2",
-//   items: 2,
-//   gap: 16,
-//   speed: 700,
-//   orientation: "vertical",
-//   direction: "top",
-//   autoplay: false,
-//   pauseOnHover: false,
-//   mouseControl: true,
-//   arrows: true,
-//   loop: true,
-// });

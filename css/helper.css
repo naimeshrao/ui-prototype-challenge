@@ -168,6 +168,10 @@ h3 {
   z-index: 1;
 }
 
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
 /* ================ Grid CSS ================ */
 /* === Container === */
 .container,
