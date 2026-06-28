@@ -818,4 +818,10 @@ h3 {
     transform: none;
     transition: none;
   }
+
+  * {
+    animation: none;
+    transition: none;
+    scroll-behavior: auto;
+  }
 }
