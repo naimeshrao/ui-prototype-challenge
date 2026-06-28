@@ -1,14 +1,14 @@
-.slider {
+.cs-slider {
   position: relative;
   width: 100%;
 }
 
-.slider .viewport {
+.cs-view {
   width: 100%;
   overflow: hidden;
 }
 
-.slider .track {
+.cs-track {
   display: flex;
   will-change: transform;
   user-select: none;
@@ -16,93 +16,67 @@
   touch-action: pan-y;
 }
 
-.slider.vertical .track {
-  touch-action: pan-x;
-}
-
-.slider .slide {
+.cs-item {
   flex: 0 0 auto;
   min-width: 0;
 }
 
-.slider button.prev,
-.slider button.next {
+.cs-prev,
+.cs-next {
   position: absolute;
-  top: calc(100% + 40px);
+  bottom: 10px;
+  left: 50%;
   transform: translateX(-50%);
   width: 60px;
   height: 60px;
-  border: 0;
+  border: 3px solid var(--white);
   border-radius: 50%;
   background-color: transparent;
-  color: var(--white);
-  border: 3px solid var(--white);
-  cursor: pointer;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 28px;
+  cursor: pointer;
+  z-index: 2;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s,
+    background-image 0.3s;
 }
 
-.slider button.prev {
-  left: calc(50% - 45px);
-  background-image: url(./../assets/images/icons/icon-arrw-left.svg);
-}
-.slider button.next {
-  left: calc(50% + 45px);
-  right: auto;
-  background-image: url(./../assets/images/icons/icon-arrw-right.svg);
+.cs-prev {
+  margin-left: -45px;
+  background-image: url("./../assets/images/icons/icon-arrw-left.svg");
 }
 
-.slider button.prev:hover {
-  background-image: url(./../assets/images/icons/icon-arrw-left-primary.svg);
-}
-.slider button.next:hover {
-  background-image: url(./../assets/images/icons/icon-arrw-right-primary.svg);
+.cs-next {
+  margin-left: 45px;
+  background-image: url("./../assets/images/icons/icon-arrw-right.svg");
 }
 
-.slider button.prev:hover,
-.slider button.next:hover {
+.cs-prev:hover {
   background-color: var(--white);
-  color: var(--color-primary-dark);
+  background-image: url("./../assets/images/icons/icon-arrw-left-primary.svg");
 }
 
-.slider .prev {
-  left: 10px;
+.cs-next:hover {
+  background-color: var(--white);
+  background-image: url("./../assets/images/icons/icon-arrw-right-primary.svg");
 }
 
-.slider .next {
-  right: 10px;
-}
-
-.slider.vertical button {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.slider.vertical .prev {
-  top: 10px;
-}
-
-.slider.vertical .next {
-  top: auto;
-  bottom: 10px;
-}
-
-.slider.dragging {
+.cs-slider.is-dragging {
   cursor: grabbing;
 }
 
-.slider.dragging .track {
+.cs-slider.is-dragging .cs-view {
+  cursor: grabbing;
+}
+
+.cs-slider.is-dragging .cs-track {
   transition: none !important;
 }
 
-.slider.dragging * {
-  pointer-events: none;
+.cs-slider.cs-has-arrows {
+  padding-bottom: 110px;
 }
 
 /* ============== Marquee Slider ============== */
@@ -117,11 +91,32 @@
   flex-wrap: nowrap;
   align-items: stretch;
   width: max-content;
-  will-change: transform;
   gap: 32px;
   padding: 2px 0;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 }
 
 .marquee-track > * {
   flex: 0 0 auto;
+}
+
+/* ============== Vertical Marquee Slider ============== */
+.vmq {
+  position: relative;
+  overflow: hidden;
+}
+
+.vmq-track {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.vmq-item {
+  flex-shrink: 0;
 }

@@ -44,21 +44,14 @@ class MarqueeSlider {
   }
 
   measure() {
-    this.width = 0;
-
-    const originals = [...this.track.children].slice(
-      0,
-      this.track.children.length / 3,
-    );
-
-    originals.forEach((item) => {
-      this.width += item.getBoundingClientRect().width;
-    });
-
     this.track.style.display = "flex";
     this.track.style.flexWrap = "nowrap";
     this.track.style.width = "max-content";
     this.track.style.willChange = "transform";
+
+    const originals = this.track.children.length / 3;
+
+    this.width = this.track.children[originals].offsetLeft;
 
     this.offset = -this.width;
   }
@@ -95,13 +88,13 @@ class MarqueeSlider {
         this.offset -= this.o.speed;
 
         if (this.offset <= -this.width * 2) {
-          this.offset = -this.width;
+          this.offset += this.width;
         }
       } else {
         this.offset += this.o.speed;
 
         if (this.offset >= 0) {
-          this.offset = -this.width;
+          this.offset -= this.width;
         }
       }
 
