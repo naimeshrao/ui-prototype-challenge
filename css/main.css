@@ -541,7 +541,31 @@ textarea.form-control {
 /* ================ Media Queries ================ */
 
 /* Large Desktops */
-@media (min-width: 1400px) {
+@media (max-width: 1600px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .schools-features {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .spot-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* Desktop */
@@ -559,6 +583,7 @@ textarea.form-control {
   }
 
   /* === Sections === */
+
   .slider-wrap {
     gap: 20px;
     padding: 0 10px;
@@ -811,16 +836,6 @@ textarea.form-control {
     right: 0;
   }
 
-  .schools-features {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .spot-content {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .exhibition-fet {
     margin-bottom: 130px;
   }
@@ -828,11 +843,6 @@ textarea.form-control {
   .exhibition-fet::after {
     bottom: -70px;
     height: 350px;
-  }
-
-  .footer {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
