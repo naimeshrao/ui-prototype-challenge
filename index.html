@@ -54,9 +54,12 @@
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/helper.css" />
     <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
     <link rel="stylesheet" href="./css/main.css" />
 
     <!-- Scripts -->
+    <script defer src="./js/slider.js"></script>
+    <script defer src="./js/marqueeSlider.js"></script>
     <script defer src="./js/main.js"></script>
   </head>
 
@@ -303,10 +306,10 @@
           Participating Schools
         </h3>
 
-        <div class="row">
-          <div class="col-12">
-            <div class="flex fd-col gap-7">
-              <div class="schools-list slide-left-right">
+        <div class="flex fd-col gap-7">
+          <div class="schools-list schools-ltr marquee">
+            <div class="marquee-track">
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-1.png"
@@ -314,7 +317,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-2.png"
@@ -322,7 +326,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-3.png"
@@ -330,7 +335,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-4.png"
@@ -338,7 +344,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-5.png"
@@ -346,7 +353,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-6.png"
@@ -354,7 +362,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-7.png"
@@ -362,7 +371,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-8.png"
@@ -371,8 +381,12 @@
                   />
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="schools-list slide-right-left">
+          <div class="schools-list schools-rtl marquee">
+            <div class="marquee-track">
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-1.png"
@@ -380,7 +394,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-2.png"
@@ -388,7 +403,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-3.png"
@@ -396,7 +412,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-4.png"
@@ -404,7 +421,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-5.png"
@@ -412,7 +430,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-6.png"
@@ -420,7 +439,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-7.png"
@@ -428,7 +448,8 @@
                     loading="lazy"
                   />
                 </div>
-
+              </div>
+              <div class="slide">
                 <div class="schools-item">
                   <img
                     src="./assets/images/logos/school-8.png"
@@ -576,105 +597,113 @@
           What Makes This Exhibition a Must-Visit
         </h2>
 
-        <div class="row">
-          <div class="col-12">
-            <div class="exh-list">
-              <div class="exh-item">
-                <div class="exh-item-inner">
-                  <div class="exh-img">
-                    <img
-                      src="./assets/images/icons/icon-exh-fe1.svg"
-                      alt="Interact Directly with School Heads"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="exh-title grad-text grad-blue">
-                    Interact Directly with School Heads
-                  </div>
-                  <div class="exh-content grad-text grad-blue">
-                    Get answers straight from the experts
+        <div class="container">
+          <div class="exh-list slider">
+            <button class="prev"></button>
+
+            <div class="viewport">
+              <div class="track">
+                <div class="slide">
+                  <div class="exh-item">
+                    <div class="exh-item-inner">
+                      <div class="exh-img">
+                        <img
+                          src="./assets/images/icons/icon-exh-fe1.svg"
+                          alt="Interact Directly with School Heads"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="exh-title grad-text grad-blue">
+                        Interact Directly with School Heads
+                      </div>
+                      <div class="exh-content grad-text grad-blue">
+                        Get answers straight from the experts
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="exh-item">
-                <div class="exh-item-inner">
-                  <div class="exh-img">
-                    <img
-                      src="./assets/images/icons/icon-exh-fe2.svg"
-                      alt="Compare Curriculum & Pedagogy"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="exh-title grad-text grad-blue">
-                    Compare Curriculum & Pedagogy
-                  </div>
-                  <div class="exh-content grad-text grad-blue">
-                    Understand the differences between CBSE, ICSE, IB,
-                    Cambridge, Finnish & more
-                  </div>
-                </div>
-              </div>
-
-              <div class="exh-item">
-                <div class="exh-item-inner">
-                  <div class="exh-img">
-                    <img
-                      src="./assets/images/icons/icon-exh-fe3.svg"
-                      alt="Get Exclusive Fee Structures & Offers"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="exh-title grad-text grad-blue">
-                    Get Exclusive Fee Structures & Offers
-                  </div>
-                  <div class="exh-content grad-text grad-blue">
-                    Access transparent information and avail offers
+                <div class="slide">
+                  <div class="exh-item">
+                    <div class="exh-item-inner">
+                      <div class="exh-img">
+                        <img
+                          src="./assets/images/icons/icon-exh-fe2.svg"
+                          alt="Compare Curriculum & Pedagogy"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="exh-title grad-text grad-blue">
+                        Compare Curriculum & Pedagogy
+                      </div>
+                      <div class="exh-content grad-text grad-blue">
+                        Understand the differences between CBSE, ICSE, IB,
+                        Cambridge, Finnish & more
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="exh-item">
-                <div class="exh-item-inner">
-                  <div class="exh-img">
-                    <img
-                      src="./assets/images/icons/icon-exh-fe4.svg"
-                      alt="Explore Schools Offerings"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="exh-title grad-text grad-blue">
-                    Explore Schools Offerings
-                  </div>
-                  <div class="exh-content grad-text grad-blue">
-                    Preview infrastructure, co-curricular, teaching methodology
-                    and culture
+                <div class="slide">
+                  <div class="exh-item">
+                    <div class="exh-item-inner">
+                      <div class="exh-img">
+                        <img
+                          src="./assets/images/icons/icon-exh-fe3.svg"
+                          alt="Get Exclusive Fee Structures & Offers"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="exh-title grad-text grad-blue">
+                        Get Exclusive Fee Structures & Offers
+                      </div>
+                      <div class="exh-content grad-text grad-blue">
+                        Access transparent information and avail offers
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="exh-item">
-                <div class="exh-item-inner">
-                  <div class="exh-img">
-                    <img
-                      src="./assets/images/icons/icon-exh-fe5.svg"
-                      alt="On-the-Spot Admissions & Counselling"
-                      loading="lazy"
-                    />
+                <div class="slide">
+                  <div class="exh-item">
+                    <div class="exh-item-inner">
+                      <div class="exh-img">
+                        <img
+                          src="./assets/images/icons/icon-exh-fe4.svg"
+                          alt="Explore Schools Offerings"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="exh-title grad-text grad-blue">
+                        Explore Schools Offerings
+                      </div>
+                      <div class="exh-content grad-text grad-blue">
+                        Preview infrastructure, co-curricular, teaching
+                        methodology and culture
+                      </div>
+                    </div>
                   </div>
-                  <div class="exh-title grad-text grad-blue">
-                    On-the-Spot Admissions & Counselling
-                  </div>
-                  <div class="exh-content grad-text grad-blue">
-                    Save time with instant applications and expert guidance
+                </div>
+                <div class="slide">
+                  <div class="exh-item">
+                    <div class="exh-item-inner">
+                      <div class="exh-img">
+                        <img
+                          src="./assets/images/icons/icon-exh-fe5.svg"
+                          alt="On-the-Spot Admissions & Counselling"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="exh-title grad-text grad-blue">
+                        On-the-Spot Admissions & Counselling
+                      </div>
+                      <div class="exh-content grad-text grad-blue">
+                        Save time with instant applications and expert guidance
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="slider-action">
-              <button class="btn-icon-prev" type="button"></button>
-              <button class="btn-icon-next" type="button"></button>
-            </div>
+
+            <button class="next"></button>
           </div>
         </div>
       </div>
