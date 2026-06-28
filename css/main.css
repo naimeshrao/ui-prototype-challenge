@@ -547,6 +547,11 @@ textarea.form-control {
     padding-right: 20px;
   }
 
+  .exhibition-fet {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .hero-section {
     padding-left: 20px;
     padding-right: 20px;
@@ -642,7 +647,8 @@ textarea.form-control {
   }
 
   .spot-content {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .spotlight-box .eyebrow {
@@ -663,7 +669,8 @@ textarea.form-control {
   }
 
   .schools-features {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .accred-section {
@@ -675,7 +682,8 @@ textarea.form-control {
     max-height: 150px;
   }
   .footer {
-    padding: 50px 0 60px;
+    padding-top: 50px;
+    padding-bottom: 60px;
   }
   .foot-content p {
     font-size: 16px;
@@ -719,7 +727,7 @@ textarea.form-control {
 
   .hero-section .form {
     margin-bottom: 40px;
-    backdrop-filter: blur(150px);
+    backdrop-filter: blur(50px);
   }
 }
 
@@ -843,6 +851,11 @@ textarea.form-control {
   .exhibition-fet::after {
     bottom: -70px;
     height: 350px;
+  }
+
+  .hero-section {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
